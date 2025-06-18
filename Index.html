@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThanQ - จองคิวแทนคุณ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 🔵 ส่วนที่ 1: Header Banner -->
+  <header class="banner">
+    <div class="icon">🕒</div>
+    <h1>ThanQ - ให้การรอคิวเป็นเรื่องง่าย</h1>
+    <ul class="features">
+      <li>✅ มั่นใจทุกการจ้าง จ่ายผ่านระบบกลาง หักค่าธรรมเนียม 25%</li>
+      <li>✅ หากไม่มีคนรับงาน คืนเงิน 100% ภายใน 2 วัน</li>
+      <li>✅ แชทผ่าน LINE OA ไม่ต้องโหลดแอป</li>
+      <li>✅ แต้มสะสม 10 แต้มต่อ 1 งาน ครบ 1,000 แต้ม รับส่วนลด 100 บาท</li>
+    </ul>
+  </header>
+
+  <!-- 🔵 ส่วนที่ 2: Top Services -->
+  <section class="services">
+    <h2>บริการยอดนิยม</h2>
+    <div class="service-grid">
+      <div class="service" onclick="filterByService('รับหิ้ว')">🛍️<br>รับหิ้ว</div>
+      <div class="service" onclick="filterByService('ต่อแถว')">🧍‍♂️<br>ต่อแถวจองคิว</div>
+      <div class="service" onclick="filterByService('จองแฟนคลับ')">🎫<br>จองที่แฟนคลับ</div>
+      <div class="service" onclick="filterByService('นั่งชิลล์')">☕<br>นั่งชิลล์เป็นเพื่อน</div>
+      <!-- เพิ่มบริการอื่น ๆ -->
+    </div>
+  </section>
+
+  <!-- 🔵 ส่วนที่ 3: รายชื่อผู้รับงาน -->
+  <section class="workers" id="workers-list">
+    <h2>ผู้รับงาน</h2>
+    <div class="worker-card">
+      <h3>ปัญธิรา เมฆวัน</h3>
+      <p>📍 เขตกำหนดเอง | 💰 กำหนดเอง บาท/ชม</p>
+      <button onclick="chatWith('ปัญธิรา')">💬 แชท</button>
+      <button>👁 ดูโปรไฟล์</button>
+      <p>⭐ 4.8 | รีวิว 12 คน</p>
+      <span class="status available">🟢 ว่าง</span>
+    </div>
+    <!-- เพิ่มรายการอื่น ๆ -->
+  </section>
+
+  <!-- 🔵 ส่วนที่ 4: ปุ่มล่าง -->
+  <footer class="footer-buttons">
+    <button onclick="location.href='register.html'">📌 สมัครรับงาน</button>
+    <button onclick="location.href='https://line.me/R/ti/p/@yourlineid'">📌 ติดต่อเรา</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
